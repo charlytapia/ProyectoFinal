@@ -1,16 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.charly.proyectofinal.MainActivity">
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Titulo de nuestra segunda pantalla -->
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/TVTitulo"
+        android:text="Calendario de Cursos"
+        android:textColor="#F44336"
+        android:textSize="55dp"
+
+        />
+    <!-- ET de Insertar Fecha -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="20"
+        android:id="@+id/ETfecha"
+        android:layout_gravity="center_horizontal"
+        android:text="Inserta Fecha" />
+
+    <!-- Btn de seleccionar la fecha indicada  -->
+
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="Seleccionar Fecha"
+        android:id="@+id/btnfecha"
+        android:layout_gravity="center_horizontal"
+        android:onClick="calendario" />
+
+
+</LinearLayout>

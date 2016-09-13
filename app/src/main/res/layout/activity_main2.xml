@@ -8,25 +8,37 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.charly.proyectofinal.Main2Activity"
-    android:background="#64b5f6">
+    android:background="#448AFF">
+    <!-- Pantalla de Inicio: Codigo con su respectivas caracteristicas -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Bienvenidos"
+        android:text="Bienvenidos "
         android:textSize="50dp"
         android:textColor="#e3f2fd"
-        android:layout_margin="20dp"
-        android:padding="10dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/TVbienvenidos"/>
+        android:id="@+id/TVbienvenidos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="92dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_centerVertical="true"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Cursos de Certificación IT-OK Center"
+        android:textColor="#e3f2fd"
+        android:textSize="50dp"
+        android:gravity="center_horizontal"
+
+
+        android:layout_alignTop="@+id/TVbienvenidos"
         android:layout_alignParentStart="true"
-        android:background="@drawable/logo" />
+        android:layout_marginTop="204dp"
+        android:id="@+id/textView" />
+
+
+
 
 </RelativeLayout>

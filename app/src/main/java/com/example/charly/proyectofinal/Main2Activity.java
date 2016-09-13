@@ -16,11 +16,12 @@ public class Main2Activity extends Activity{
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+//se esta relizando un SplashScreen en pantalla de Inicio de 8 segundos
 
                 Intent intent = new Intent(Main2Activity.this,MainActivity.class);
                 startActivity(intent);
             }
 
-        },4000);
+        },5000);
     }
 }
